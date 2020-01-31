@@ -1,8 +1,8 @@
-#React primitive date picker
+# React primitive date picker
 
 Simplest datepicker possible with modest amount of features and native behaviour on mobile devices. Easily customizable.
 
-###Components props
+### Components props
 
 Name | Type | Default value | Description
 ------------ | ------------- | ------------ | -------------
@@ -13,7 +13,7 @@ locale | { String } | enUS | Locale that will be mapped in date-ins locale and u
 customClassNames | { Object } | n/a | Object with classes that you can use to customize the element. List of properties you can find below.
 customElements | { Object } | n/a | List of classes that you can use to customize the element. List of properties you can find below.
 
-###customClassNames object
+### customClassNames object
 
 Name | Type | Description
 ------------ | ------------ | -------------
@@ -27,7 +27,7 @@ weekDay | { String } | Class of shortened week days above calendar.
 dateItem | { String } | Class of every calendar item. You can adjust font-size of every element in here and dropdown will stretch accordingly.
 dateItemSelected | { String } | Class of selected item. 
 
-###customElements object
+### customElements object
 
 Name | Type | Description
 ------------ | ------------ | -------------
