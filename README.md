@@ -2,6 +2,7 @@
 
 Simplest datepicker possible with modest amount of features and native behaviour on mobile devices. Easily customizable.
 
+Here's [DEMO](https://polymorpheuz.github.io/react-primitive-datepicker/)!
 ### Components props
 
 Name | Type | Default value | Description

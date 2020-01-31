@@ -25,7 +25,8 @@ const Mobile = (props) => {
   useOutsideClick(inputRef, () => unFocusHandler());
 
   const localChangeHandler = (e) => {
-    const parsedValue = parse(e.target.value, 'yyyy-mm-dd', new Date());
+    console.log(e.target.value);
+    const parsedValue = parse(e.target.value, 'yyyy-MM-dd', new Date());
     changeHandler(parsedValue);
   };
   return (

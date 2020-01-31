@@ -9,7 +9,7 @@
     "build": "cross-env NODE_ENV=production webpack --mode=production",
     "transpile": "rm -rf dist && babel src -d dist --copy-files",
     "prepublishOnly": "npm run transpile",
-    "deploy": "gh-pages -d examples/dist",
+    "deploy": "gh-pages -d dist/examples",
     "publish-demo": "npm run build && npm run deploy"
   },
   "homepage": "https://github.com/polymorpheuz/react-primitive-datepicker#readme",
