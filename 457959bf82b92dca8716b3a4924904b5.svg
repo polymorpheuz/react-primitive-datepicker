@@ -1,0 +1,15 @@
+<svg viewBox="0 0 701 669" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#000000">
+            <g id="chevron" transform="translate(325.000000, 0.000000)">
+                <path d="M217,510 L510,218 C526,201 526,175 510,159 C494,143 467,143 451,159 L188,422 L-75,159 C-92,143 -118,143 -134,159 C-150,175 -150,201 -134,218 L158,510 C175,526 201,526 217,510 Z" id="Path" transform="translate(188.000000, 334.500000) scale(-1, 1) rotate(90.000000) translate(-188.000000, -334.500000) "></path>
+            </g>
+            <g id="chevron-copy">
+                <path d="M217,510 L510,218 C526,201 526,175 510,159 C494,143 467,143 451,159 L188,422 L-75,159 C-92,143 -118,143 -134,159 C-150,175 -150,201 -134,218 L158,510 C175,526 201,526 217,510 Z" id="Path" transform="translate(188.000000, 334.500000) scale(-1, 1) rotate(90.000000) translate(-188.000000, -334.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
