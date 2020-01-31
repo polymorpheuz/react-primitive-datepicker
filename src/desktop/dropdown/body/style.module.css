@@ -1,0 +1,47 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 14.28%);
+    margin: 10px -10px 0 -10px;
+}
+
+.weekDays {
+    color: inherit;
+    font-size: 10px;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 -10px;
+}
+
+.weekDay {
+    color: inherit;
+    display: inline-block;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.dateItem {
+    background: none;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px;
+    margin: 2px;
+    outline: none;
+    transition: all .2s ease-in;
+}
+
+.dateItem:hover:not(.dateItemSelected) {
+    background: #d4d4d4;
+}
+
+.dateItemSelected {
+    background: #FF4793;
+    color: white;
+}
+
+.dateItemFromOtherMonth {
+    opacity: .4;
+}

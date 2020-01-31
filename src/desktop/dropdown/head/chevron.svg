@@ -1,0 +1,7 @@
+<svg viewBox="0 -150 600 669" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chevron" fill="#000000">
+            <path d="M363,363 L656,71 C672,54 672,28 656,12 C640,-4 613,-4 597,12 L334,275 L71,12 C54,-4 28,-4 12,12 C-4,28 -4,54 12,71 L304,363 C321,379 347,379 363,363 Z" id="Path" transform="translate(334.000000, 187.500000) scale(-1, 1) rotate(90.000000) translate(-334.000000, -187.500000) "></path>
+        </g>
+    </g>
+</svg>

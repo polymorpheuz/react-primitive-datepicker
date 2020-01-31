@@ -1,0 +1,74 @@
+{
+  "name": "react-primitive-datepicker",
+  "version": "1.0.0",
+  "description": "Primitive date picker with native behaviour on mobile",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --mode=development",
+    "build": "cross-env NODE_ENV=production webpack --mode=production",
+    "transpile": "rm -rf dist && babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "npm run build && npm run deploy"
+  },
+  "homepage": "https://github.com/polymorpheuz/react-primitive-datepicker#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polymorpheuz/react-primitive-datepicker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/polymorpheuz/react-primitive-datepicker/issues"
+  },
+  "keywords": [
+    "react",
+    "datepicker",
+    "calendar"
+  ],
+  "author": "Dmitry Mozolevsky",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^7.1.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "file-loader": "^5.0.2",
+    "gh-pages": "^2.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "terser-webpack-plugin": "^2.3.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "date-fns": "^2.9.0",
+    "ismobilejs": "^1.0.3"
+  }
+}

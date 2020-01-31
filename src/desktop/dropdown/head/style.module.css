@@ -1,0 +1,46 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.chevron {
+    width: 10px;
+    height: 10px;
+    display: inline;
+}
+
+.chevron:hover {
+    opacity: .3;
+}
+
+.chevronLeft {
+    transform: rotate(180deg);
+}
+
+.leftDoubleChevron {
+    margin-right: 10px;
+}
+
+.rightDoubleChevron {
+    margin-left: 10px;
+}
+
+.dateHeading {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.controlsWrapper {
+    display: flex;
+}
+
+.controlsWrapper:hover {
+    cursor: pointer;
+}
+
+.control {
+    display: inline-block;
+}
