@@ -26,7 +26,9 @@ const Mobile = (props) => {
 
   const localChangeHandler = (e) => {
     console.log(e.target.value);
-    const parsedValue = parse(e.target.value, 'yyyy-MM-dd', new Date());
+    const parsedValue = e.target.value
+      ? parse(e.target.value, 'yyyy-MM-dd', new Date())
+      : null;
     changeHandler(parsedValue);
   };
   return (
