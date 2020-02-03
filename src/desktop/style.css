@@ -1,8 +1,8 @@
-.wrapper {
+.dp_desktop--wrapper {
     position: relative;
     text-align: center;
 }
 
-.placeholder {
+.dp_desktop--placeholder {
     color: #ddd;
 }

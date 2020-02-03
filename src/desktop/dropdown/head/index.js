@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { format } from 'date-fns';
 import chevron from './chevron.svg';
 import doubleChevron from './double-chevron.svg';
-import style from './style.module.css';
+import './style.css';
 
 const Head = (props) => {
   const {
@@ -26,9 +26,9 @@ const Head = (props) => {
         alt="Decrement year"
         src={doubleChevron}
         className={classNames(
-          style.chevron,
-          style.chevronLeft,
-          style.leftDoubleChevron,
+          'dp_head--chevron',
+          'dp_head--chevronLeft',
+          'dp_head--leftDoubleChevron',
         )}
       />
     );
@@ -39,7 +39,7 @@ const Head = (props) => {
       <img
         alt="Decrement month"
         src={chevron}
-        className={classNames(style.chevron, style.chevronLeft)}
+        className={classNames('dp_head--chevron', 'dp_head--chevronLeft')}
       />
     );
 
@@ -50,8 +50,8 @@ const Head = (props) => {
         alt="Increment year"
         src={doubleChevron}
         className={classNames(
-          style.chevron,
-          style.rightDoubleChevron,
+          'dp_head--chevron',
+          'dp_head--rightDoubleChevron',
         )}
       />
     );
@@ -62,42 +62,42 @@ const Head = (props) => {
       <img
         alt="Increment month"
         src={chevron}
-        className={style.chevron}
+        className="dp_head--chevron"
       />
     );
 
   return (
-    <div className={style.wrapper}>
-      <div className={style.controlsWrapper}>
+    <div className="dp_head--wrapper">
+      <div className="dp_head--controlsWrapper">
         <div
-          className={style.control}
+          className="dp_head--control"
           onClick={decrementYearHandler}
         >
           { decrementYearElement }
         </div>
         <div
-          className={style.control}
+          className="dp_head--control"
           onClick={decrementMonthHandler}
         >
           { decrementMonthElement }
         </div>
       </div>
       <h5 className={classNames(
-        style.dateHeading,
+        'dp_head--dateHeading',
         { [customClassNames.dateHeading]: customClassNames.dateHeading },
       )}
       >
         { format(localDate, 'LLL yyyy', { locale }) }
       </h5>
-      <div className={style.controlsWrapper}>
+      <div className="dp_head--controlsWrapper">
         <div
-          className={style.control}
+          className="dp_head--control"
           onClick={incrementMonthHandler}
         >
           { incrementMonthElement }
         </div>
         <div
-          className={style.control}
+          className="dp_head--control"
           onClick={incrementYearHandler}
         >
           { incrementYearElement }

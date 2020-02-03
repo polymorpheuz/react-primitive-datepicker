@@ -12,7 +12,7 @@ import {
   addMonths,
 } from 'date-fns';
 import classNames from 'classnames';
-import style from './style.module.css';
+import './style.css';
 
 const Body = (props) => {
   const {
@@ -49,11 +49,11 @@ const Body = (props) => {
   };
 
   return (
-    <div className={style.wrapper}>
+    <div className="dp_body--wrapper">
       { weekDays.map((weekDay) => (
         <div
           className={classNames(
-            style.weekDay,
+            'dp_body--weekDay',
             { [customClassNames.weekDay]: customClassNames.weekDay },
           )}
           key={weekDay}
@@ -64,15 +64,15 @@ const Body = (props) => {
       { eachDayArray.map((date) => (
         <div
           className={classNames(
-            style.dateItem,
+            'dp_body--dateItem',
             {
               [customClassNames.dateItem]: customClassNames.dateItem,
-              [style.dateItemSelected]: compareAsc(value, date) === 0,
+              ['dp_body--dateItemSelected']: compareAsc(value, date) === 0,
               [customClassNames.dateItemSelected]: (
                 customClassNames.dateItemSelected
                 && compareAsc(value, date) === 0
               ),
-              [style.dateItemFromOtherMonth]: getMonth(localDate) !== getMonth(date),
+              ['dp_body--dateItemFromOtherMonth']: getMonth(localDate) !== getMonth(date),
             },
           )}
           key={date.getTime()}

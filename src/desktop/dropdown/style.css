@@ -1,4 +1,4 @@
-.wrapper {
+.dp_dropdown--wrapper {
     background-color: white;
     border-radius: 10px;
     border: 1px #ddd solid;
@@ -8,6 +8,6 @@
     top: 50px;
 }
 
-.hidden {
+.dp_dropdown--hidden {
     display: none;
 }

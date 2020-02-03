@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import style from './style.module.css';
+import './style.css';
 
 import DropdownHead from './head';
 import DropdownBody from './body';
@@ -21,9 +21,9 @@ const Dropdown = (props) => {
   return (
     <div
       className={classNames(
-        style.wrapper,
+        'dp_dropdown--wrapper',
         {
-          [style.hidden]: !isOpen,
+          ['dp_dropdown--hidden']: !isOpen,
           [customClassNames.dropdownWrapper]: customClassNames.dropdownWrapper,
         },
       )}

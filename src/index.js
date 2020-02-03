@@ -3,7 +3,8 @@ import React from 'react';
 import isMobile from 'ismobilejs';
 import classNames from 'classnames';
 import * as locales from 'date-fns/locale';
-import styles from './style.module.css';
+import './style.css';
+import './shared.css';
 
 import DesktopDatePicker from './desktop';
 import MobileDatePicker from './mobile';
@@ -38,7 +39,7 @@ const DatePicker = (props) => {
 
   return (
     <div className={classNames(
-      styles.wrapper,
+      'dp_root--wrapper',
       { [customClassNames.wrapper]: customClassNames.wrapper },
     )}
     >

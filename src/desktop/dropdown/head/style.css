@@ -1,46 +1,46 @@
-.wrapper {
+.dp_head--wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 5px;
 }
 
-.chevron {
+.dp_head--chevron {
     width: 10px;
     height: 10px;
     display: inline;
 }
 
-.chevron:hover {
+.dp_head--chevron:hover {
     opacity: .3;
 }
 
-.chevronLeft {
+.dp_head--chevronLeft {
     transform: rotate(180deg);
 }
 
-.leftDoubleChevron {
+.dp_head--leftDoubleChevron {
     margin-right: 10px;
 }
 
-.rightDoubleChevron {
+.dp_head--rightDoubleChevron {
     margin-left: 10px;
 }
 
-.dateHeading {
+.dp_head--dateHeading {
     font-size: 14px;
     font-weight: 400;
     margin: 0;
 }
 
-.controlsWrapper {
+.dp_head--controlsWrapper {
     display: flex;
 }
 
-.controlsWrapper:hover {
+.dp_head--controlsWrapper:hover {
     cursor: pointer;
 }
 
-.control {
+.dp_head--control {
     display: inline-block;
 }

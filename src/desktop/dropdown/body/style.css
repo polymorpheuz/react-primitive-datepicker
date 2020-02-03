@@ -1,10 +1,10 @@
-.wrapper {
+.dp_body--wrapper {
     display: grid;
     grid-template-columns: repeat(7, 14.28%);
     margin: 10px -10px 0 -10px;
 }
 
-.weekDays {
+.dp_body--weekDays {
     color: inherit;
     font-size: 10px;
     display: flex;
@@ -13,14 +13,14 @@
     margin: 0 -10px;
 }
 
-.weekDay {
+.dp_body--weekDay {
     color: inherit;
     display: inline-block;
     font-size: 10px;
     padding: 5px;
 }
 
-.dateItem {
+.dp_body--dateItem {
     background: none;
     border: none;
     border-radius: 100%;
@@ -33,15 +33,15 @@
     transition: all .2s ease-in;
 }
 
-.dateItem:hover:not(.dateItemSelected) {
+.dp_body--dateItem:hover:not(.dp_body--dateItemSelected) {
     background: #d4d4d4;
 }
 
-.dateItemSelected {
+.dp_body--dateItemSelected {
     background: #FF4793;
     color: white;
 }
 
-.dateItemFromOtherMonth {
+.dp_body--dateItemFromOtherMonth {
     opacity: .4;
 }

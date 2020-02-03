@@ -5,8 +5,7 @@ import {
 } from 'date-fns';
 import classNames from 'classnames';
 import useOutsideClick from '../hooks/useOutsideClick';
-import style from './style.module.css';
-import shared from '../shared.module.css';
+import './style.css';
 
 const Mobile = (props) => {
   const {
@@ -32,19 +31,16 @@ const Mobile = (props) => {
     changeHandler(parsedValue);
   };
   return (
-    <div className={style.wrapper}>
-      <label
-        className={style.label}
-        htmlFor="dateInput"
-      >
+    <div className="dp_mobile--wrapper">
+      <label htmlFor="dateInput">
         <div
           ref={inputRef}
           onClick={toggleInputFocusHandler}
           className={classNames(
-            shared.input,
+            'dp_shared--input',
             {
               [customClassNames.input]: customClassNames.input,
-              [shared.inputFocused]: inputIsFocused,
+              ['dp_shared--inputFocused']: inputIsFocused,
               [customClassNames.inputFocused]: (
                 inputIsFocused && customClassNames.inputFocused
               ),
@@ -57,7 +53,7 @@ const Mobile = (props) => {
               : (
                 <span
                   className={classNames(
-                    style.placeholder,
+                    'dp_mobile--placeholder',
                     { [customClassNames.placeholder]: customClassNames.placeholder },
                   )}
                 >
@@ -69,7 +65,7 @@ const Mobile = (props) => {
       </label>
       <input
         id="dateInput"
-        className={style.dateInput}
+        className="dp_mobile--date-input"
         type="date"
         onChange={localChangeHandler}
       />

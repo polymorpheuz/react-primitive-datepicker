@@ -8,8 +8,7 @@ import {
   startOfMonth,
   format,
 } from 'date-fns';
-import style from './style.module.css';
-import shared from '../shared.module.css';
+import './style.css';
 
 import Dropdown from './dropdown';
 import useOutsideClick from '../hooks/useOutsideClick';
@@ -52,15 +51,15 @@ const Desktop = (props) => {
 
   return (
     <div
-      className={style.wrapper}
+      className="dp_desktop--wrapper"
       ref={dropdownRef}
     >
       <div
         className={classNames(
-          shared.input,
+          'dp_shared--input',
           {
             [customClassNames.input]: customClassNames.input,
-            [shared.inputFocused]: inputIsFocused,
+            ['dp_shared--inputFocused']: inputIsFocused,
             [customClassNames.inputFocused]: (
               inputIsFocused && customClassNames.inputFocused
             ),
@@ -78,7 +77,7 @@ const Desktop = (props) => {
             : (
               <span
                 className={classNames(
-                  style.placeholder,
+                  'dp_desktop--placeholder',
                   { [customClassNames.placeholder]: customClassNames.placeholder },
                 )}
               >
