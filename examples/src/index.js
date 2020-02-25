@@ -192,7 +192,7 @@ const App = () => {
               <tr>
                 <td>incrementYearElement</td>
                 <td>JSX element</td>
-                <td>I Second right dropdown head control. </td>
+                <td>Second right dropdown head control. </td>
               </tr>
             </tbody>
           </table>

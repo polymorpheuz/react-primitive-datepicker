@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import * as PropTypes from 'prop-types';
 import {
   parse,
   format,
@@ -71,6 +72,31 @@ const Mobile = (props) => {
       />
     </div>
   );
+};
+
+Mobile.propTypes = {
+  changeHandler: PropTypes.func.isRequired,
+  value: PropTypes.instanceOf(Date),
+  locale: PropTypes.shape({}),
+  customClassNames: PropTypes.shape({
+    wrapper: PropTypes.string,
+    dropdownWrapper: PropTypes.string,
+    input: PropTypes.string,
+    inputFocused: PropTypes.string,
+    placeholder: PropTypes.string,
+    dateHeading: PropTypes.string,
+    weekDay: PropTypes.string,
+    dateItem: PropTypes.string,
+    dateItemSelected: PropTypes.string,
+  }),
+  placeholder: PropTypes.string,
+};
+
+Mobile.defaultProps = {
+  value: null,
+  locale: null,
+  customClassNames: {},
+  placeholder: '',
 };
 
 export default Mobile;

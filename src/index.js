@@ -1,5 +1,6 @@
 /* global navigator */
 import React from 'react';
+import * as PropTypes from 'prop-types';
 import isMobile from 'ismobilejs';
 import classNames from 'classnames';
 import * as locales from 'date-fns/locale';
@@ -67,6 +68,38 @@ const DatePicker = (props) => {
       }
     </div>
   );
+};
+
+DatePicker.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  value: PropTypes.instanceOf(Date),
+  locale: PropTypes.shape({}),
+  customClassNames: PropTypes.shape({
+    wrapper: PropTypes.string,
+    dropdownWrapper: PropTypes.string,
+    input: PropTypes.string,
+    inputFocused: PropTypes.string,
+    placeholder: PropTypes.string,
+    dateHeading: PropTypes.string,
+    weekDay: PropTypes.string,
+    dateItem: PropTypes.string,
+    dateItemSelected: PropTypes.string,
+  }),
+  customElements: PropTypes.shape({
+    decrementYearElement: PropTypes.element,
+    decrementMonthElement: PropTypes.element,
+    incrementMonthElement: PropTypes.element,
+    incrementYearElement: PropTypes.element,
+  }),
+  placeholder: PropTypes.string,
+};
+
+DatePicker.defaultProps = {
+  value: null,
+  locale: null,
+  customClassNames: {},
+  customElements: {},
+  placeholder: '',
 };
 
 export default DatePicker;
