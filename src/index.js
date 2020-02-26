@@ -15,8 +15,8 @@ const DatePicker = (props) => {
     onChange,
     value,
     locale,
-    customClassNames = {},
-    customElements = {},
+    customClassNames,
+    customElements,
     placeholder,
   } = props;
 
